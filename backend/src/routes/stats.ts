@@ -1,6 +1,6 @@
 import express from 'express';
-import { getStats, getAllStats, createStat, updateStat, deleteStat } from '../controllers/statsController';
-import { protect, admin } from '../middleware/auth';
+import { getStats, getAllStats, createStat, updateStat, deleteStat } from '../controllers/statsController.js';
+import { protect, admin } from '../middleware/auth.js';
 
 const router = express.Router();
 

@@ -1,10 +1,10 @@
 import bcrypt from 'bcryptjs';
-import User from '../models/User';
-import Course from '../models/Course';
-import Testimonial from '../models/Testimonial';
-import Gallery from '../models/Gallery';
-import Enquiry from '../models/Enquiry';
-import Stats from '../models/Stats';
+import User from '../models/User.js';
+import Course from '../models/Course.js';
+import Testimonial from '../models/Testimonial.js';
+import Gallery from '../models/Gallery.js';
+import Enquiry from '../models/Enquiry.js';
+import Stats from '../models/Stats.js';
 
 export const seedDatabase = async () => {
     try {

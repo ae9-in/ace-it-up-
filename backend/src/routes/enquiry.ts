@@ -1,6 +1,6 @@
 import express from 'express';
-import { getEnquiries, createEnquiry, updateEnquiry, deleteEnquiry } from '../controllers/enquiryController';
-import { authenticate, requireAdmin } from '../middleware/auth';
+import { getEnquiries, createEnquiry, updateEnquiry, deleteEnquiry } from '../controllers/enquiryController.js';
+import { authenticate, requireAdmin } from '../middleware/auth.js';
 
 const router = express.Router();
 

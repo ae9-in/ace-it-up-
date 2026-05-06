@@ -1,6 +1,6 @@
 import express from 'express';
-import { getCourses, createCourse, updateCourse, deleteCourse } from '../controllers/courseController';
-import { authenticate, requireAdmin } from '../middleware/auth';
+import { getCourses, createCourse, updateCourse, deleteCourse } from '../controllers/courseController.js';
+import { authenticate, requireAdmin } from '../middleware/auth.js';
 
 const router = express.Router();
 

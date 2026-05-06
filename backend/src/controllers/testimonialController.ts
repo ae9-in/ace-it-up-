@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Testimonial from '../models/Testimonial';
+import Testimonial from '../models/Testimonial.js';
 
 export const getTestimonials = async (req: Request, res: Response): Promise<void> => {
     try {

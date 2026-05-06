@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Gallery from '../models/Gallery';
+import Gallery from '../models/Gallery.js';
 
 export const getGallery = async (req: Request, res: Response): Promise<void> => {
     try {

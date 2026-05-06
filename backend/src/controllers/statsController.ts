@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Stats from '../models/Stats';
+import Stats from '../models/Stats.js';
 
 export const getStats = async (req: Request, res: Response) => {
   try {

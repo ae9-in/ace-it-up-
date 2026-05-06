@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Enquiry from '../models/Enquiry';
+import Enquiry from '../models/Enquiry.js';
 
 export const getEnquiries = async (req: Request, res: Response): Promise<void> => {
     try {

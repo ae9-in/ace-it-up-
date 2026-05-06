@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import Course from '../models/Course';
+import Course from '../models/Course.js';
 
 export const getCourses = async (req: Request, res: Response): Promise<void> => {
     try {
