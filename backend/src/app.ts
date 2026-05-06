@@ -48,11 +48,12 @@ export const connectDB = async () => {
         console.log('✅ Connected to MongoDB Atlas');
         await seedDatabase();
     } catch (error: any) {
+        console.error('❌ Mongoose Connection Error:', error.message);
         if (process.env.NODE_ENV === 'production') {
             console.error('❌ CRITICAL: Atlas connection failed in PRODUCTION mode.');
+            console.error('Reason:', error.message);
             throw error;
         }
-
         console.log('⚠️ Atlas connection failed. Starting In-Memory Database...');
         const mongoServer = await MongoMemoryServer.create();
         const memoryUri = mongoServer.getUri();
