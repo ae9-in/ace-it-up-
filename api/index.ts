@@ -1,4 +1,4 @@
-import app, { connectDB } from '../backend/src/app';
+import app, { connectDB } from '../backend/src/app.js';
 
 // Vercel handles the serverless execution, so we just need to 
 // ensure the database is connected and export the app.

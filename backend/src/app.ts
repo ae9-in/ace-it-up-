@@ -7,7 +7,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import morgan from 'morgan';
 import { MongoMemoryServer } from 'mongodb-memory-server';
-import { seedDatabase } from './lib/seeder';
+import { seedDatabase } from './lib/seeder.js';
 
 dotenv.config();
 
@@ -17,12 +17,12 @@ app.use(cors());
 app.use(express.json());
 app.use(morgan('dev'));
 
-import authRoutes from './routes/auth';
-import courseRoutes from './routes/course';
-import enquiryRoutes from './routes/enquiry';
-import galleryRoutes from './routes/gallery';
-import testimonialRoutes from './routes/testimonial';
-import statsRoutes from './routes/stats';
+import authRoutes from './routes/auth.js';
+import courseRoutes from './routes/course.js';
+import enquiryRoutes from './routes/enquiry.js';
+import galleryRoutes from './routes/gallery.js';
+import testimonialRoutes from './routes/testimonial.js';
+import statsRoutes from './routes/stats.js';
 
 app.get('/api/health', (_req, res) => {
     res.status(200).json({ status: 'ok', message: 'Backend is running' });
